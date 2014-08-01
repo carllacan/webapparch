@@ -1,0 +1,70 @@
+## Install Dropbox 
+cd ~ && wget -O - "https://www.dropbox.com/download?plat=lnx.x86_64" | tar xzf
+~/.dropbox-dist/dropboxd 
+
+## Install Chrome
+sudo add-apt-repositoy "deb http://dl.google.com/linux/deb/ stable non-free main"
+sudo wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | apt-key add -
+sudo apt-get update
+sudo apt-get install google-chrome-stable
+
+## Install Spotify
+sudo add-apt-repository "deb http://repository.spotify.com stable non-free"
+sudo apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv-keys 94558F59
+sudo apt-get update
+sudo apt-get install spotify-client
+
+## Install Skype
+
+
+
+## Install Steam
+
+
+
+## Install Gparted
+
+
+
+## Install Banshee
+
+
+
+## Install Calibre
+
+
+
+## Install Preload
+sudo apt-get install preload
+
+## Clean Cache
+sudo apt-get autoclean
+
+## Show all startup applications
+sudo sed -i 's/NoDisplay=true/NoDisplay=false/g' /etc/xdg/autostart/*.desktop
+
+## Install Ubuntu Tweak
+sudo add-apt-repository ppa:tualatrix/next
+sudo apt-get update 
+sudo apt-get install ubuntu-tweak
+
+## Install VLC
+sudo add-apt-repository ppa:videolan/stable-daily
+sudo apt-get update
+sudo apt-get install vlc
+
+## Install XMBC
+sudo apt-get install xbmc
+
+## Install archive management apps
+sudo apt-get install unace unrar zip unzip p7zip-full p7zip-rar sharutils rar uudeview mpack a
+rj cabextract file-roller
+
+## Install Cheese Webcam
+sudo apt-get install cheese
+
+## Install GIMP
+sudo apt-get install gimp gimp-data gimp-plugin-registry gimp-data-extras
+
+
+
