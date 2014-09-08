@@ -1,0 +1,23 @@
+<h1>Listing pos</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pos.each do |po| %>
+      <tr>
+        <td><%= link_to 'Show', po %></td>
+        <td><%= link_to 'Edit', edit_po_path(po) %></td>
+        <td><%= link_to 'Destroy', po, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Po', new_po_path %>
